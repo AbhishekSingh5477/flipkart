@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+}
+.left-main{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#1a72f7;
+}
+.left-main .text{
+    color: aliceblue;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+}
+.left-main .text span{
+  font-size: larger;
+}
+.right-main{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.right-main input{
+    /* opacity: ; */
+    font-size: larger;
+     width: 90%;
+}
+.upper-right-main{
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.otp{
+    width: 90%;
+    height:40px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    background-color: #f57a07;
+    color: aliceblue;
+    cursor: pointer;
+}
+.lower-right-main{
+    color: #0066ff;
+}
+.validity{
+    color: #fa5d5d;
+}
+@media only screen and (max-width:560px){
+    .main{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .left-main{
+      height: 50%;
+      width: 100%;
+    }
+    .left-main img{
+        margin-top: 5px;
+       height: 120px;
+       /* display: none; */
+       /* justify-content: start; */
+    }
+    .left-main .text span{
+        font-size: smaller;
+    }
+    .right-main .upper-right-main{
+        /* justify-content: flex-start; */
+        /* gap: 20px; */
+        justify-content: space-around;
+        height: 50%;
+    }
+    .right-main input .otp{
+        width: 600px;
+    }
+}
+@media only screen and (max-width:1000px)and (min-width:561px){
+    .main{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+    }
+    .left-main{
+        height: 40%;
+        width: 100%;
+        justify-content:end;
+        align-items:center ;
+    }
+    .left-main .text span{
+        font-size:small;
+    }
+    .left-main img{
+        height: 120px;
+        margin-top: 5px;
+    }
+    .right-main{
+        width: 500px;
+        height: 400px;
+        justify-content:start;
+        gap: 20px;
+        height: 60%;
+    }
+    .right-main input .otp{
+        width: 400px;
+        height: 20px;
+    }
+    .right-main .upper-right-main{
+        gap: 15px;
+        height: 50%;
+    }
+}
+
